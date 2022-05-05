@@ -498,26 +498,77 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal-inner">
         <button data-modal-close type="button" class="close-modal">
-          <svg
-            width="30"
-            height="30"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="15" cy="15" r="15" fill="#fff" />
-            <circle
-              cx="15"
-              cy="15"
-              r="14.5"
-              stroke="#000"
-              stroke-opacity=".1"
-            />
-            <path
-              d="M21 10.108 19.892 9 15.5 13.392 11.108 9 10 10.108l4.392 4.392L10 18.892 11.108 20l4.392-4.392L19.892 20 21 18.892 16.608 14.5 21 10.108Z"
-              fill="#000"
-            />
+          <svg class="icon-close-modal">
+            <use href="./sprite.svg#close-modal"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <ul class="modal-form-list">
+            <li class="modal-form-items input">
+              <labbel class="modal-lable">
+                Имя
+                <input
+                  class="modal-name-input"
+                  type="text"
+                  autocomplete="off"
+                />
+                <svg class="modal-icon-name">
+                  <use href="./sprite.svg#modal-name"></use>
+                </svg>
+              </labbel>
+            </li>
+            <li class="modal-form-items input">
+              <labbel class="modal-lable">
+                Телефон
+                <input class="modal-tel-input" type="tel" autocomplete="off" />
+                <svg class="modal-icon-tel">
+                  <use href="./sprite.svg#modal-tel"></use>
+                </svg>
+              </labbel>
+            </li>
+            <li class="modal-form-items input">
+              <labbel class="modal-lable"
+                >Почта
+                <input
+                  class="modal-mail-input"
+                  type="mail"
+                  autocomplete="off"
+                />
+
+                <svg class="modal-icon-mail">
+                  <use href="./sprite.svg#modal-mail"></use>
+                </svg>
+              </labbel>
+            </li>
+            <li class="modal-form-items-textarea input">
+              <labbel class="modal-lable"> Комментарий</labbel>
+              <input
+                class="modal-textarea-input"
+                type="textarea"
+                autocomplete="off"
+                placeholder="Введите текст"
+              />
+            </li>
+
+            <li class="modal-form-items input">
+              <labbel class="modal-lable-checkbox">
+                <svg class="checkbox-icon">
+                  <use href="./sprite.svg#modal-chek"></use>
+                </svg>
+                <input class="checkbox" type="checkbox" />
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="modal-checkbox-link">Условия договора</a>
+              </labbel>
+            </li>
+
+            <li class="modal-form-items input">
+              <labbel class="modal-lable-button"
+                ><button class="modal-button" type="submit">Отправить</button>
+              </labbel>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
 
