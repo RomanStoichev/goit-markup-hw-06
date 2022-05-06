@@ -506,29 +506,29 @@
           <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
           <ul class="modal-form-list">
             <li class="modal-form-items input">
-              <labbel class="modal-lable">
+              <label class="modal-lable">
                 Имя
                 <input
                   class="modal-name-input"
                   type="text"
                   autocomplete="off"
                 />
-                <svg class="modal-icon-name">
+                <svg class="modal-icon">
                   <use href="./sprite.svg#modal-name"></use>
                 </svg>
-              </labbel>
+              </label>
             </li>
             <li class="modal-form-items input">
-              <labbel class="modal-lable">
+              <label class="modal-lable">
                 Телефон
                 <input class="modal-tel-input" type="tel" autocomplete="off" />
-                <svg class="modal-icon-tel">
+                <svg class="modal-icon">
                   <use href="./sprite.svg#modal-tel"></use>
                 </svg>
-              </labbel>
+              </label>
             </li>
             <li class="modal-form-items input">
-              <labbel class="modal-lable"
+              <label class="modal-lable"
                 >Почта
                 <input
                   class="modal-mail-input"
@@ -536,38 +536,31 @@
                   autocomplete="off"
                 />
 
-                <svg class="modal-icon-mail">
+                <svg class="modal-icon">
                   <use href="./sprite.svg#modal-mail"></use>
                 </svg>
-              </labbel>
+              </label>
             </li>
             <li class="modal-form-items-textarea input">
-              <labbel class="modal-lable"> Комментарий</labbel>
-              <input
-                class="modal-textarea-input"
-                type="textarea"
-                autocomplete="off"
-                placeholder="Введите текст"
-              />
-            </li>
-
-            <li class="modal-form-items input">
-              <labbel class="modal-lable-checkbox">
-                <svg class="checkbox-icon">
-                  <use href="./sprite.svg#modal-chek"></use>
-                </svg>
-                <input class="checkbox" type="checkbox" />
-                Соглашаюсь с рассылкой и принимаю
-                <a href="#" class="modal-checkbox-link">Условия договора</a>
-              </labbel>
-            </li>
-
-            <li class="modal-form-items input">
-              <labbel class="modal-lable-button"
-                ><button class="modal-button" type="submit">Отправить</button>
-              </labbel>
+              <label class="modal-lable">
+                Комментарий
+                <textarea
+                  class="modal-textarea-input"
+                  type="textarea"
+                  autocomplete="off"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
             </li>
           </ul>
+          <label class="modal-lable-checkbox">
+            <input class="checkbox" type="checkbox" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="modal-checkbox-link">Условия договора</a>
+          </label>
+
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
